@@ -5,28 +5,54 @@ description: 'Connector Kit'
 sidebar_position: 1
 ---
 
-The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace Connector][edc-url] for sovereign, cross-enterprise data exchange.
+## Introduction
+
+The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace Components Connector][edc-url] for sovereign, cross-enterprise data exchange.
+
+## Vision & Mission
+
+### Vision
+
+We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This creates added value for everyone, which can only be achieved through collaboration.
+
+### Mission
+
+Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and components designed to support full sovereignity.
+With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
+
+## Concept
+
+Trust, interoperability, and data sovereignty are the objectives and values for secure and sustainable peer-to-peer data exchange between organizations and companies. The claim is data sovereignty: Whoever provides data to the Data Space retains control and decides individually who is involved in the data exchange, how, when, where and under what conditions. A corresponding concept was developed in the context of [Gaia-X][gaiax-url] and the [International Data Space Association][idsa-url]. __The essential software component is the EDC Connector.__
 
 ![EDC Overview](images/edc_overview.png)
 
-Trust, interoperability and data sovereignty, these are the objectives and values for secure and sustainable peer-to-peer data exchange between organizations and companies. The claim is data sovereignty: Whoever makes data available retains control and decides individually who is involved in the data exchange, how, when, where and under what conditions.
+With the [EDC Connector][edc-url], a new communication component was introduced, which implements the following architectural principles:
 
-A corresponding concept was developed in the context of [Gaia-X][gaiax-url] and the [International Data Space Association][idsa-url]. The essential software component is the connector.
+- Simple. Maintaining a small and efficient core with as few external dependencies as possible.
+- Interoperable. Independent of platforms and ecosystems.
+- Decentralized. Software components with the necessary capabilities for participating in a Data Space are located on the partners' side, data is only exchanged within agreed contracts.
+- Data protection is more important than data sharing. Data to be transmitted is fundamentally linked to policies via contracts; a transfer without a contract is not possible.
+- Separation of metadata and data. Enables high throughput rates for the actual data transfer.
+- Consistent semantics. Is the basis for interoperability and digital value creation.
+- Automation. As far as possible, all processes, starting with determining the identity, through ensuring the contractually agreed regulations to data transmission, are automated.
+- Standardization. Existing standards and protocols ([GAIA-X][gaiax-url] and [IDSA][idsa-url]) are used as far as possible.
 
-With the [EDC][edc-url], a new central communication component was created, which implements the following architectural principles:
+## Use Case
 
-- Simple, maintaining a small and efficient core with as few external dependencies as possible
-- Interoperable, independent of platforms and ecosystems
-- Decentralized, software components with the necessary capabilities for participating in a data room are located on the partners' side, data is only exchanged between the agreed points.
-- Data protection is more important than data sharing, data to be transmitted are fundamentally linked to policies via contracts; a transfer without a contract is not possible.
-- Separation of metadata and data enables high throughput rates for the actual data transfer.
-- Consistent semantics for the data is the basis for the consistency of digital value creation.
-- As far as possible, all processes, starting with determining the identity, through ensuring the contractually agreed regulations to data transmission, are automated.
-- Existing standards and protocols ([GAIA-X][gaiax-url] and [IDSA][idsa-url]) are used as far as possible.
+The EDC Connector is the enabling component for all use cases within Catena-X and the only component to execute the exchange of operational data to Data Space participants. The base use case is therfore the exchange of data between to partners. Value creation along the automotive value chain is tied to processing data in specific contexts. Within Catena-X exist 10 use cases companies can participate in. Active participation in given use cases always requires the use of an [EDC Connector][edc-url]. Depending on the use case a participant chooses to participate in, further components will be required.
+
+- [Sustainability][sustainability-url]
+- [Traceability][traceability-url]
+- [Demand and Capacity Management][DCM-url]
+- [Predictive Unit Real-Time Information Service (PURIS)][PURIS-url]
+- [Business Partner Data Management][BPDM-url]
+- [Digital Product pass][digital-product-pass-url]
+
+## Business Architecture
 
 The [EDC][edc-url] as a connector implements a framework agreement for sovereign, cross-organizational data exchange. The International Data Spaces Standard (IDS) and relevant principles in connection with [GAIA-X][gaiax-url] were implemented. The connector is designed to be extensible to support alternative protocols and to be integrated into different ecosystems.
 
-The objective is to set up a decentralized software component on the part of the respective partner, which bundles the skills required to participate in a data room and enables peer-to-peer connections between participants.
+The objective is to set up a decentralized software component on the part of the respective partner, which bundles the skills required to participate in a Data Space and enables peer-to-peer connections between participants.
 The focus here is particularly on the data sovereignty of the independent companies.
 The functionality required for this is bundled in the open-source project "Eclipse Dataspace Connector", to which members of the Eclipse Foundation contribute.
 
@@ -42,7 +68,36 @@ The architecture of the EDC combines various services that are necessary for the
 - The actual data transfer via the data plane extension
 - The connection of software systems on the customer and provider side
 
+## Additional Resources
+
+### Catena-X Standards
+
+### Terminology
+
+- Control Plane
+- Data Plane
+- Extensions
+- Contract Definition
+- Assets
+- Policy Definition
+
+### Notice
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- SPDX-License-Identifier: CC-BY-4.0
+- SPDX-FileCopyrightText: 2023 sovity GmbH, msg systems AG
+- SPDX-FileCopyrightText: 2023 msg systems AG
+- SPDX-FileCopyrightText: 2023 Mercedes-Benz Group AG
+- Source URL: https://github.com/eclipse-tractusx/tractusx-edc
+
 [edc-url]: https://github.com/eclipse-edc/Connector
 [gaiax-url]: https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html
 [idsa-url]: https://internationaldataspaces.org/
 [daps-url]: https://www.dataspaces.fraunhofer.de/en/software/identity_provider.html
+[traceability-url]: https://github.com/eclipse-tractusx/traceability-foss
+[sustainability-url]: https://catena-x.net/en/benefits/sustainability
+[BPDM-url]: https://github.com/eclipse-tractusx/bpdm
+[DCM-url]: https://github.com/eclipse-tractusx/demand-capacity-mgmt/blob/main/README.md
+[PURIS-url]: https://github.com/eclipse-tractusx/puris
+[digital-product-pass-url]:https://github.com/eclipse-tractusx/digital-product-pass
