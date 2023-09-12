@@ -96,7 +96,7 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 [idsa-url]: https://internationaldataspaces.org/
 [daps-url]: https://www.dataspaces.fraunhofer.de/en/software/identity_provider.html
 [traceability-url]: https://github.com/eclipse-tractusx/traceability-foss
-[sustainability-url]: https://catena-x.net/en/benefits/sustainability
+[sustainability-url]: https://github.com/ChristopherWinterZF/pcf-exchange-kit/tree/featurebranch/devlopmentview
 [BPDM-url]: https://github.com/eclipse-tractusx/bpdm
 [DCM-url]: https://github.com/eclipse-tractusx/demand-capacity-mgmt/blob/main/README.md
 [PURIS-url]: https://github.com/eclipse-tractusx/puris
