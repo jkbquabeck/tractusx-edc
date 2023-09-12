@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Connector KIT provides a connector framework, based on the Eclipse Dataspace Connector, for sovereign, cross-enterprise data exchange.
+The Connector KIT provides a connector framework based on the Eclipse Dataspace Components (EDC) for sovereign, cross-enterprise data exchange. The EDC Connector is the component enabling the sovereign peer-to-peer connection of Data Space participants.
 
 ## Vision & Mission
 
@@ -12,7 +12,7 @@ We believe that sharing data along the automotive supply chain adds great value 
 
 ### Mission
 
-With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the necessary standards, APIs, interaction patterns and reference implementations  for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
+With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
 
 ## Concept
 
@@ -20,11 +20,11 @@ Trust, interoperability, and data sovereignty, these are the objectives and valu
 
 ## Use Case
 
-Use Cases Listen und verlinken
+The EDC Connector is the enabling component for all use cases within Catena-X.
 
-* Base Use Case: P2P Datenaustausch
-* PCF
+* Base Use Case: peer-to-peer data exchange
 * Traceability
+* PCF
 * DCM
 * ...
 
@@ -46,3 +46,11 @@ The Connector KIT provides a connector framework, based on the Eclipse Dataspace
 * Policy Definition
 
 ### Notice
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+* SPDX-License-Identifier: CC-BY-4.0
+* SPDX-FileCopyrightText: 2023 sovity GmbH, msg systems AG
+* SPDX-FileCopyrightText: 2023 msg systems AG
+* SPDX-FileCopyrightText: 2023 Mercedes-Benz Group AG
+* Source URL: https://github.com/eclipse-tractusx/tractusx-edc
