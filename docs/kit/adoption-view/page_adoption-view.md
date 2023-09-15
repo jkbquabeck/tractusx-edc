@@ -13,7 +13,7 @@ The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace
 
 ### Vision
 
-We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This unlocks significant value for everyone, which can only be achieved through collaboration.
+Sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Within a few years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This unlocks significant value for everyone, which can only be achieved through collaboration.
 
 ### Mission
 
