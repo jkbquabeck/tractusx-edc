@@ -13,12 +13,12 @@ The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace
 
 ### Vision
 
-We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This creates added value for everyone, which can only be achieved through collaboration.
+We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This unlocks significant value for everyone, which can only be achieved through collaboration.
 
 ### Mission
 
 Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and components designed to support full sovereignity.
-With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
+With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers.
 
 ## Concept
 
