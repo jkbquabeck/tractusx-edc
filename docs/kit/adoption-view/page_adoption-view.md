@@ -79,7 +79,7 @@ The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
 - Control Plane: The Control Plane handles meta data exchange with other components and Connectors, as well as transfer of access tokens.
 - Data Plane: The Data Plane can handle several forms of actual data exchange by utilizing various extensions.
 - Extensions: There are different extenions for the Connector, e.g. for the Data Plane. This enables various tranfer modes like httpData or via blob-storage.
-- Assets: Data Sources are connected to the Connector and represent Assets.
+- Data Assets: Data Sources are connected to the Connector and are represented by Data Assets.
 - Policy Definition: A standardized set of policies can be used to define access to and usage of assets.
 - Contract Definition: By combining Assets and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
 
@@ -88,7 +88,7 @@ The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: 2023 sovity GmbH, msg systems AG
+- SPDX-FileCopyrightText: 2023 sovity GmbH
 - SPDX-FileCopyrightText: 2023 msg systems AG
 - SPDX-FileCopyrightText: 2023 Mercedes-Benz Group AG
 - Source URL: https://github.com/eclipse-tractusx/tractusx-edc
