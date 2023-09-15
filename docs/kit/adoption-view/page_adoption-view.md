@@ -13,12 +13,13 @@ The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace
 
 ### Vision
 
-We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This creates added value for everyone, which can only be achieved through collaboration.
+We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This unlocks added value for everyone as well as a significantly improved collaboration.
+<!-- Was redundant before. Shouldn't the vision also include a vision for the "Connector Kit"? -->
 
 ### Mission
 
-Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and components designed to support full sovereignity.
-With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
+Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and reusable components designed to support full sovereignity.
+With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations for developers. Within the Adoption View of the Connector KIT we provide an introduction into the Connector technology and its role within Catena-X.
 
 ## Concept
 
@@ -39,18 +40,20 @@ With the [EDC Connector][edc-url], a new communication component was introduced,
 
 ## Use Case
 
-The EDC Connector is the enabling component for all use cases within Catena-X and the only component to execute the exchange of operational data to Data Space participants. The base use case is therfore the exchange of data between to partners. Value creation along the automotive value chain is tied to processing data in specific contexts. Within Catena-X exist 10 use cases companies can participate in. Active participation in given use cases always requires the use of an [EDC Connector][edc-url]. Depending on the use case a participant chooses to participate in, further components will be required.
+The EDC Connector is the enabling component for all use cases within Catena-X and the only component to execute the exchange of operational data to Data Space participants. The base use case is therfore the exchange of data between to partners. Value creation along the automotive value chain is tied to processing data in specific contexts. Within Catena-X exist 10 use cases companies can participate in. Active participation in given use cases always requires the use of an [EDC Connector][edc-url]. Depending on the use case, further components will be required.
 
 - [Sustainability][sustainability-url]
 - [Traceability][traceability-url]
 - [Demand and Capacity Management][DCM-url]
 - [Predictive Unit Real-Time Information Service (PURIS)][PURIS-url]
 - [Business Partner Data Management][BPDM-url]
-- [Digital Product pass][digital-product-pass-url]
+- [Digital Product Pass][digital-product-pass-url]
+<!-- Link to more Use Cases?-->
 
 ## Business Architecture
 
 The [EDC][edc-url] as a connector implements a framework agreement for sovereign, cross-organizational data exchange. The International Data Spaces Standard (IDS) and relevant principles in connection with [GAIA-X][gaiax-url] were implemented. The connector is designed to be extensible to support alternative protocols and to be integrated into different ecosystems.
+<!-- Redundant-->
 
 The objective is to set up a decentralized software component on the part of the respective partner, which bundles the skills required to participate in a Data Space and enables peer-to-peer connections between participants.
 The focus here is particularly on the data sovereignty of the independent companies.
