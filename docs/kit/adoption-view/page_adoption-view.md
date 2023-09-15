@@ -74,8 +74,6 @@ The architecture of the EDC combines various services that are necessary for the
 
 The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
 
-The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
-
 ### Terminology
 
 - Control Plane: The Control Plane handles meta data exchange with other components and Connectors, as well as transfer of access tokens.
@@ -84,24 +82,12 @@ The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
 - Data Assets: Data Sources are connected to the Connector and are represented by Data Assets.
 - Policy Definition: A standardized set of policies can be used to define access to and usage of assets.
 - Contract Definition: By combining Assets and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
-- Control Plane: The Control Plane handles meta data exchange with other components and Connectors, as well as transfer of access tokens.
-
-- Data Plane: The Data Plane can handle several forms of actual data exchange by utilizing various extensions.
-
-- Extensions: There are different extenions for the Connector, e.g. for the Data Plane. This enables various tranfer modes like httpData or via blob-storage.
-
-- Assets: Data Sources are connected to the Connector and represent Assets.
-
-- Policy Definition: A standardized set of policies can be used to define access to and usage of assets.
-
-- Contract Definition: By combining Assets and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
 
 ### Notice
 
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: 2023 sovity GmbH
 - SPDX-FileCopyrightText: 2023 sovity GmbH
 - SPDX-FileCopyrightText: 2023 msg systems AG
 - SPDX-FileCopyrightText: 2023 Mercedes-Benz Group AG
@@ -117,5 +103,4 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 [DCM-url]: https://github.com/eclipse-tractusx/demand-capacity-mgmt/blob/main/README.md
 [PURIS-url]: https://github.com/eclipse-tractusx/puris
 [digital-product-pass-url]:https://github.com/eclipse-tractusx/digital-product-pass
-[Catena-X-Standards-url]:https://catena-x.net/de/standard-library
 [Catena-X-Standards-url]:https://catena-x.net/de/standard-library
