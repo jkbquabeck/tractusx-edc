@@ -13,12 +13,12 @@ The ConnectorKit provides a connector framework, based on the [Eclipse Dataspace
 
 ### Vision
 
-We believe that sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Our vision is that in 5 years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused. This unlocks significant value for everyone, which can only be achieved through collaboration.
+Sharing data along the automotive supply chain adds great value for every participant. The key to such collaboration is trust in the involved partners and assurance that the shared data is not being misused. Within a few years, companies along the automotive value chain will share and exchange data with each other as a matter of course, without anyone fearing that their data will be misused while unlocking significant values for every party.
 
 ### Mission
 
 Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and components designed to support full sovereignity.
-With this Connector KIT we provide the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers.
+The Connector KIT provides the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers.
 
 ## Concept
 
@@ -74,8 +74,16 @@ The architecture of the EDC combines various services that are necessary for the
 
 The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
 
+The Connector KIT builds on the [Catena-X Standards][Catena-X-Standards-url].
+
 ### Terminology
 
+- Control Plane: The Control Plane handles meta data exchange with other components and Connectors, as well as transfer of access tokens.
+- Data Plane: The Data Plane can handle several forms of actual data exchange by utilizing various extensions.
+- Extensions: There are different extenions for the Connector, e.g. for the Data Plane. This enables various tranfer modes like httpData or via blob-storage.
+- Data Assets: Data Sources are connected to the Connector and are represented by Data Assets.
+- Policy Definition: A standardized set of policies can be used to define access to and usage of assets.
+- Contract Definition: By combining Assets and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
 - Control Plane: The Control Plane handles meta data exchange with other components and Connectors, as well as transfer of access tokens.
 
 - Data Plane: The Data Plane can handle several forms of actual data exchange by utilizing various extensions.
@@ -94,6 +102,7 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 
 - SPDX-License-Identifier: CC-BY-4.0
 - SPDX-FileCopyrightText: 2023 sovity GmbH
+- SPDX-FileCopyrightText: 2023 sovity GmbH
 - SPDX-FileCopyrightText: 2023 msg systems AG
 - SPDX-FileCopyrightText: 2023 Mercedes-Benz Group AG
 - Source URL: https://github.com/eclipse-tractusx/tractusx-edc
@@ -108,4 +117,5 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 [DCM-url]: https://github.com/eclipse-tractusx/demand-capacity-mgmt/blob/main/README.md
 [PURIS-url]: https://github.com/eclipse-tractusx/puris
 [digital-product-pass-url]:https://github.com/eclipse-tractusx/digital-product-pass
+[Catena-X-Standards-url]:https://catena-x.net/de/standard-library
 [Catena-X-Standards-url]:https://catena-x.net/de/standard-library
