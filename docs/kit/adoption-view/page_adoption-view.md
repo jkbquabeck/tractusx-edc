@@ -18,7 +18,7 @@ Sharing data along the automotive supply chain adds great value for every partic
 ### Mission
 
 Collaboration needs trust. Within Catena-X trust is built on an open-source architecture and components designed to support full sovereignity.
-The Connector KIT provides the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations  for developers.
+The Connector KIT provides the single source of information and technology to perform trustful data exchange within Catena-X. The Connector KIT bundles the interaction patterns, relevant standards, APIs, and reference implementations for developers.
 
 ## Concept
 
@@ -114,17 +114,11 @@ A standardized set of policies can be used to define actions regarding access to
 
 #### Contract Definition
 
-By combining Assets and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
+By combining [`Assets`](#data asset) and Policies, Contracts for data offerings are defined. These Contracts need to be accepted by consuming participants (Connectors) for the data exchange to take place.
 
 #### Contract offer
 
-The contract offer is a dynamic representation of the [`ContractDefinition`](#contract-definition)
-for a specific consumer and serves as protocol's data transfer object (DTO) for a particular contract negotiation.
-Contract offers are not persisted and will be regenerated on every request. The connector acting as data provider will
-generate contract offers only for contract definitions dedicated to the organization or data space participant
-operating the requesting connector acting as data consumer. A contract offer is always related to a single asset of
-the `ContractDefinition` object (e.g. for a `ContractDefinition` containing three `Asset` objects, the connector will
-generate three `ContractOffer` objects).
+The contract offer is a representation of the [`ContractDefinition`](#contract-definition) for a specific consumer and serves as protocol for a data transfer object (DTO) for a particular contract negotiation. If a data consumer wants to conclude a binding data exchange contract based on the terms of a Data Offer, the data consumer can communicate such desire to the data provider by referencing to a specific Data Offer. Under German law, this constitutes a binding offer by the data consumer. For now, the dtaa consumer only has the option to accept all terms of a Data Offer (or not). The Data Exchange Process does not yet provide for the data consumer to make an offer that deviates from the terms of a Data Offer as set by the data provider.
 
 #### Contract negotiation
 
@@ -138,8 +132,7 @@ participants, including a start and an end date and further relevant information
 
 #### Transfer process
 
-After a successful contract negotiation, a `DataRequest` is sent from a consumer connector to a provider connector to
-initiate the data transfer. It references the requested [`Asset`](#data asset) and [`ContractAgreement`](#contract-agreement) as well as information about the [data destination](#data-address).
+After a successful contract negotiation, `DataRequests` can be sent from the consumer connector to the provider connector to initiate the data transfer. It references the requested [`Asset`](#data asset) and [`ContractAgreement`](#contract-agreement) as well as information about the [data destination](#data-address).
 
 Similar to the `ContractNegotiation`, this object captures the current state of a data transfer. This process is
 inherently asynchronous, so the `TransferProcess` objects are stored in a backing data store (`TransferProcessStore`).
